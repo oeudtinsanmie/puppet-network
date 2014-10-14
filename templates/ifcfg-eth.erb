@@ -1,6 +1,8 @@
 ###
 ### File managed by Puppet
 ###
+<% if vlan %>VLAN=yes
+<% end -%>
 DEVICE=<%= @interface %>
 BOOTPROTO=<%= @bootproto %>
 <% if !@macaddress.empty? %>HWADDR=<%= @macaddress %>

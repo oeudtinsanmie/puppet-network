@@ -79,5 +79,6 @@ define network::if::static (
     dns1         => $dns1,
     dns2         => $dns2,
     domain       => $domain,
+    vlan         => $vlan,
   }
 } # define network::if::static
